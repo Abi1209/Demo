@@ -13,7 +13,7 @@ public class HelloService {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String sayHello()
 	{
-		return "Plain text ...HELLO";
+		return "Plain text ...hello";
 	}
 	
 	@GET
@@ -21,6 +21,7 @@ public class HelloService {
 	@Produces(MediaType.TEXT_XML)
 	public String sayXMLHello()
 	{
+		System.out.println("helloooo");
 		return "<hello> Welcome </hello>";
 	}
 
